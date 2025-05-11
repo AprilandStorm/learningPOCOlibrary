@@ -63,5 +63,20 @@ compiler.libcxx=libstdc++11
 cppstd=17
 ```
 保存退出（Ctrl+O 保存，Enter，再按 Ctrl+X 退出）\
------长久地等待------请问为什么连接远程库经常出问题🤬\
+-----长久地等待------\
+请问为什么连接远程库经常出问题🤬\
 好了，安装成功了😊\
+
+## 第6步 安装第三方库
+- 安装OpenSSL `sudo apt-get install openssl libssl-dev`
+- 安装iODBC/unixODBC `sudo apt-get install libiodbc2 libiodbc2-dev`\
+然而，Makefile 可能无法找到头文件和库文件。在这种情况下，请相应地编辑 Data/ODBC 和/或 Data/MySQL 中的 Makefile 文件。
+- 安装MySQL Client
+```
+sudo apt-get update
+sudo apt-get install libmysqlclient-dev
+```
+
+# 配置VS2022与ubuntu进行远程连接
+- VS2022下新建CMake文件
+- [远程连接](https://blog.csdn.net/qq_45009309/article/details/130149429)
