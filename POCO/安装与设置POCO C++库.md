@@ -145,3 +145,6 @@ $ ./configure --help`
 $ sudo gmake -s install
 ```
 - 重要提示：请确保构建目录的路径不包含符号链接,否则，将收到错误消息“当前工作目录不在 $PROJECT_BASE 下”
+
+# 下载源码并进行配置
+- 
