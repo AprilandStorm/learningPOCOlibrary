@@ -149,8 +149,10 @@ $ sudo gmake -s install
 # 下载源码并进行配置
 - 使用 CMake 来构建 POCO（需要 CMake 3.5 或更高版本），在 POCO 源代码树中，运行以下命令：
 ```
-$ mkdir cmake-build
+$ mkdir cmake-build//创建一个名为cmake-build的新目录 
 $ cd cmake-build
-$ cmake .. && cmake --build .
+$ cmake .. && cmake --build .//运行CMake,读取上一级目录中的CMakeLists.txt文件生成构建配置；编译项目
 ```
 - 还可以运行 `$ sudo cmake --build . --target install` 在 cmake-build 目录中将 POCO 安装到 /usr/local，可以通过在配置步骤中将 -DCMAKE_INSTALL_PREFIX=/path/to/directory 选项传递给 CMake 来更改安装目录
+- 可以通过在配置步骤中将 -DCMAKE_INSTALL_PREFIX=/path/to/directory 选项传递给 CMake 来更改安装目录
+- 
